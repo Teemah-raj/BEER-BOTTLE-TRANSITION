@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(96, 96, 155);
+}
+
+div{
+    margin: auto; 
+    display: grid;
+    place-content: center;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 25px;
+    border-radius: 10px;
+  }
+
+  button:hover{
+    background: rgb(178, 178, 219);
+    color: white;
+  }
+
+h1{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+}
+
+
+.hidden {
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transition over 0.5 seconds */
+  }
+
+  /* Final visible state */
+  .visible {
+    opacity: 1;
+    transition: opacity 1s ease, transform 1s ease;
+    transform: translateX(-50%) translateY(-40%)
+}
